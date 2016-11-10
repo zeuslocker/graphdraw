@@ -6,8 +6,8 @@ require 'graphdraw/version'
 Gem::Specification.new do |spec|
   spec.name          = "graphdraw"
   spec.version       = Graphdraw::VERSION
-  spec.authors       = ["Volodymyr L"]
-  spec.email         = ["vova1997012@gmail.com"]
+  spec.authors       = ["Volodymyr Lapan"]
+  spec.email         = ["lapan40@ukr.net"]
 
   spec.summary       = %q{A short summary, because Rubygems requires one.}
   spec.description   = %q{My long description.}
@@ -30,10 +30,11 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "rubocop", "~> 0.45.0"
+  #spec.add_runtime_dependency "rubocop", "~> 0.45.0"
 
   spec.add_development_dependency "bundler", "~> 1.13"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency 'rubocop', '~> 0.45.0'
   
 end
